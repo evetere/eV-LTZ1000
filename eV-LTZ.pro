@@ -1,4 +1,4 @@
-update=Tuesday, 12 September 2017 'amt' 01:37:42
+update=Thursday, 28 September 2017 'amt' 10:55:34
 version=1
 last_client=eeschema
 [pcbnew]
@@ -59,3 +59,13 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=eV-LTZ1000
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
