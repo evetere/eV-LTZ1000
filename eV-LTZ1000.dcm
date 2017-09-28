@@ -1,0 +1,18 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LT1013
+D LT1013
+K LT1013
+$ENDCMP
+#
+$CMP LT1013N8
+D LT1013
+K LT1013
+$ENDCMP
+#
+$CMP LTZ1000
+D LTZ1000
+F http://cds.linear.com/docs/en/datasheet/1000afe.pdf
+$ENDCMP
+#
+#End Doc Library
