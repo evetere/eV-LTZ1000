@@ -1,4 +1,5 @@
 .DS_Store
 *.bak
+*.bck
 simulations/
 eV-LTZ-cache*
