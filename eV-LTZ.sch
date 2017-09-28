@@ -29,7 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:eV-LTZ1000
-LIBS:pi-LTZ-cache
+LIBS:eV-LTZ-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -625,4 +625,6 @@ Wire Wire Line
 Connection ~ 3425 5225
 Wire Wire Line
 	6300 3000 6300 2875
+Text Notes 1050 1900 0    60   ~ 0
+[12:17:23] <@pitagoras> https://github.com/evetere/eV-LTZ1000\n[12:19:22] <@TiN> C2 should be 0.022uF\n[12:20:21] <@TiN> GND from D1 must go to P2 connector ground, not VREF- !\n[12:22:57] <@TiN> also where is your opamp decoupling ? :)\n[12:23:11] <@TiN> I'd add 1uF + 100nF on pin 6-2\n[12:24:48] <@TiN> also i strongly suggest using LT1013 in DIP package, not SO8\n[12:25:21] <@pitagoras> hm I have so8 already :(\n[12:25:33] <@pitagoras> wait vref- is not ground?\n[12:25:55] <@TiN> it's signal return.\n[12:26:12] <@TiN> it connects to ground on PSU entry point\n[12:26:13] <@pitagoras> tied to single point ground \n\n[12:26:27] <@TiN> otherwise noise from heater will be injected into signal nets\n[12:28:25] <@TiN> also R6,D1,Q1,C4-C7 don't have values\n[12:28:31] <@TiN> D2 as well\n\n
 $EndSCHEMATC
