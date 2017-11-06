@@ -3,3 +3,5 @@
 *.bck
 simulations/
 eV-LTZ-cache*
+*.kicad_pcb-bak
+*.net

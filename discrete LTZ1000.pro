@@ -1,6 +1,6 @@
-update=Wednesday, 01 November 2017 'pmt' 19:11:03
+update=22/05/2015 07:44:53
 version=1
-last_client=eeschema
+last_client=kicad
 [general]
 version=1
 RootSch=
@@ -29,7 +29,7 @@ version=1
 NetIExt=net
 [eeschema]
 version=1
-LibDir=/Users/evetere/Documents/electronics/kicad_libs
+LibDir=
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -60,16 +60,3 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=eV-LTZ1000
-LibName31=sensors
-LibName32=lp2951
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
