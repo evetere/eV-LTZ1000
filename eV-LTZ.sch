@@ -299,17 +299,6 @@ F 3 "" H 5375 2975 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP C8
-U 1 1 59CD714F
-P 5175 2975
-F 0 "C8" H 5200 3075 50  0000 L CNN
-F 1 "1uF" H 5200 2875 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_Tantal_D5.0mm_P5.00mm" H 5213 2825 50  0001 C CNN
-F 3 "" H 5175 2975 50  0000 C CNN
-	1    5175 2975
-	1    0    0    -1  
-$EndComp
-$Comp
 L C C4
 U 1 1 59BC1B82
 P 3375 3375
@@ -334,17 +323,6 @@ F 2 "Varistors:RV_Disc_D7_W3.4_P5" H 6300 975 50  0001 C CNN
 F 3 "" H 6300 975 50  0001 C CNN
 	1    6300 925 
 	1    0    0    -1  
-$EndComp
-$Comp
-L D_TVS D5
-U 1 1 59EE5901
-P 1650 3125
-F 0 "D5" H 1650 3225 50  0000 C CNN
-F 1 "D_TVS" H 1650 3025 50  0000 C CNN
-F 2 "Diodes_THT:D_DO-15_P10.16mm_Horizontal" H 1650 3125 50  0001 C CNN
-F 3 "" H 1650 3125 50  0000 C CNN
-	1    1650 3125
-	0    1    1    0   
 $EndComp
 $Comp
 L D_Shockley D3
@@ -413,17 +391,6 @@ F 3 "" H 5600 925 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C9
-U 1 1 59FDB55A
-P 3050 3275
-F 0 "C9" H 3075 3375 50  0000 L CNN
-F 1 ".1uF" H 3075 3175 50  0000 L CNN
-F 2 "Capacitors_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 3088 3125 50  0001 C CNN
-F 3 "" H 3050 3275 50  0000 C CNN
-	1    3050 3275
-	1    0    0    -1  
-$EndComp
-$Comp
 L D_Shockley D6
 U 1 1 59FDD6C1
 P 2725 1675
@@ -444,17 +411,6 @@ F 2 "" H 3475 1675 50  0000 C CNN
 F 3 "" H 3475 1675 50  0000 C CNN
 	1    3475 1675
 	1    0    0    -1  
-$EndComp
-$Comp
-L D_TVS D4
-U 1 1 59FDF05E
-P 1900 3125
-F 0 "D4" H 1900 3225 50  0000 C CNN
-F 1 "D_TVS" H 1900 3025 50  0000 C CNN
-F 2 "Diodes_THT:D_DO-15_P10.16mm_Horizontal" H 1900 3125 50  0001 C CNN
-F 3 "" H 1900 3125 50  0000 C CNN
-	1    1900 3125
-	0    1    1    0   
 $EndComp
 Wire Wire Line
 	6325 2475 6750 2475
@@ -575,11 +531,6 @@ Wire Wire Line
 	5375 3175 5375 3125
 Connection ~ 5075 3175
 Wire Wire Line
-	5175 3125 5175 3175
-Connection ~ 5175 3175
-Wire Wire Line
-	5375 2825 5175 2825
-Wire Wire Line
 	5375 1475 5375 2825
 Connection ~ 5075 1475
 Wire Wire Line
@@ -674,22 +625,7 @@ Connection ~ 1650 1475
 Wire Wire Line
 	1900 1675 1900 2975
 Connection ~ 1900 1675
-$Comp
-L D_TVS D7
-U 1 1 59FE08AF
-P 10100 2525
-F 0 "D7" H 10100 2625 50  0000 C CNN
-F 1 "D_TVS" H 10100 2425 50  0000 C CNN
-F 2 "Diodes_THT:D_DO-15_P10.16mm_Horizontal" H 10100 2525 50  0001 C CNN
-F 3 "" H 10100 2525 50  0000 C CNN
-	1    10100 2525
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	10100 1925 10100 2375
 Connection ~ 10100 1925
-Wire Wire Line
-	10100 2675 10100 3075
 Connection ~ 10100 3075
 $Comp
 L BD139 Q1
@@ -720,8 +656,6 @@ Wire Wire Line
 Wire Wire Line
 	4000 4100 4000 4025
 Connection ~ 3375 1675
-Wire Wire Line
-	3050 1475 3050 3125
 Connection ~ 3050 1475
 Connection ~ 5075 3875
 Connection ~ 3375 4100
@@ -776,24 +710,14 @@ Connection ~ 2775 4100
 $Comp
 L CP C5
 U 1 1 59FE960F
-P 2775 3275
-F 0 "C5" H 2800 3375 50  0000 L CNN
-F 1 "1uF" H 2800 3175 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_Tantal_D5.0mm_P5.00mm" H 2813 3125 50  0001 C CNN
-F 3 "" H 2775 3275 50  0000 C CNN
-	1    2775 3275
+P 3050 3275
+F 0 "C5" H 3075 3375 50  0000 L CNN
+F 1 "47uF" H 3075 3175 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_Tantal_D5.0mm_P5.00mm" H 3088 3125 50  0001 C CNN
+F 3 "" H 3050 3275 50  0000 C CNN
+	1    3050 3275
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2775 3125 2775 2650
-Wire Wire Line
-	2775 2650 3050 2650
-Connection ~ 3050 2650
-Wire Wire Line
-	2775 3425 2775 3675
-Wire Wire Line
-	2775 3675 3050 3675
-Connection ~ 3050 3675
 $Comp
 L R R4
 U 1 1 59FE9F44
@@ -814,7 +738,7 @@ L CP C10
 U 1 1 59FEB1B4
 P 3650 3375
 F 0 "C10" H 3675 3475 50  0000 L CNN
-F 1 "1uF" H 3675 3275 50  0000 L CNN
+F 1 "47uF" H 3675 3275 50  0000 L CNN
 F 2 "Capacitors_THT:CP_Radial_Tantal_D5.0mm_P5.00mm" H 3688 3225 50  0001 C CNN
 F 3 "" H 3650 3375 50  0000 C CNN
 	1    3650 3375
@@ -929,4 +853,6 @@ F 3 "" H 875 3750 50  0000 C CNN
 	1    875  3750
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	3050 1475 3050 3125
 $EndSCHEMATC
