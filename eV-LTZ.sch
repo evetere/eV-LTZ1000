@@ -31,6 +31,7 @@ LIBS:valves
 LIBS:eV-LTZ1000
 LIBS:sensors
 LIBS:lp2951
+LIBS:eV-LTZ-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -583,8 +584,6 @@ Wire Wire Line
 	4000 1675 4000 2175
 Wire Wire Line
 	2500 1475 5375 1475
-Wire Wire Line
-	1650 4350 1650 3275
 Connection ~ 1650 4350
 Wire Wire Line
 	2875 1675 4000 1675
@@ -601,11 +600,7 @@ Wire Wire Line
 Connection ~ 3475 1675
 Wire Wire Line
 	1525 1675 2575 1675
-Wire Wire Line
-	1650 1475 1650 2975
 Connection ~ 1650 1475
-Wire Wire Line
-	1900 1675 1900 2975
 Connection ~ 1900 1675
 Connection ~ 10100 1925
 Connection ~ 10100 3075
@@ -652,8 +647,6 @@ Text Label 1450 4350 0    60   ~ 0
 VIN-
 Text Label 1525 1675 0    60   ~ 0
 VH+
-Wire Wire Line
-	1900 3275 1900 4100
 Connection ~ 1900 4100
 Text Label 1400 4100 0    60   ~ 0
 VH-
@@ -662,7 +655,7 @@ Wire Wire Line
 Text Label 4300 1950 0    60   ~ 0
 HEAT
 Text Label 6725 2475 2    60   ~ 0
-TSENSE
+TSENSE_B
 Text Label 1075 3750 0    60   ~ 0
 VIN-
 Text Label 1075 3375 0    60   ~ 0
@@ -837,4 +830,18 @@ F 3 "" H 875 3750 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	3050 1475 3050 3125
+Text Label 8250 2100 0    60   ~ 0
+TCOMP
+Text Label 7725 3225 0    60   ~ 0
+ZENER-
+Text Label 9625 2375 0    60   ~ 0
+CURRENT_OUT
+Text Label 6300 2100 0    60   ~ 0
+TSENSE_C
+Text Label 4000 2975 0    60   ~ 0
+HEATER+
+Text Label 3275 1675 0    60   ~ 0
+VCC
+Text Label 3975 4100 0    60   ~ 0
+HEATER-
 $EndSCHEMATC
